@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Item, Label, Segment } from "semantic-ui-react";
+import { Button, Item, Label, Segment, Image } from "semantic-ui-react";
 import { IActivity } from "../../../app/modules/activity";
 
 interface IProps {
@@ -19,6 +19,7 @@ export const ActivityList: React.FC<IProps> = ({
         {activities.map((activity) => (
           <Item key={activity.id}>
             <Item.Content>
+              <Image src={`/assets/categoryImages/${activity.category}.png`} />
               <Item.Header as="a">{activity.title}</Item.Header>
               <Item.Meta>{activity.date}</Item.Meta>
               <Item.Description>

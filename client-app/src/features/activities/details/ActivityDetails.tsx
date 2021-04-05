@@ -16,7 +16,7 @@ export const ActivityDetails: React.FC<IProps> = ({
   return (
     <Card fluid>
       <Image
-        src={`/assets/categoryImages/${activity.category}.jpg`}
+        src={`/assets/categoryImages/${activity.category}.png`}
         wrapped
         ui={false}
       />
